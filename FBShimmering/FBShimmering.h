@@ -24,8 +24,11 @@ typedef NS_ENUM(NSInteger, FBShimmerDirection) {
 //! @abstract The time interval between shimmerings in seconds. Defaults to 0.4.
 @property (assign, nonatomic, readwrite) CFTimeInterval shimmeringPauseDuration;
 
-//! @abstract The opacity of the content while it is shimmering. Defaults to 0.5.
+//! @abstract The opacity of the content while it is steady state shimmering. Defaults to 0.5.
 @property (assign, nonatomic, readwrite) CGFloat shimmeringOpacity;
+
+//! @abstract The opacity of the content while it at it's peak shimmering. Defaults to 1.0.
+@property (assign, nonatomic, readwrite) CGFloat shimmeringPeakOpacity;
 
 //! @abstract The speed of shimmering, in points per second. Defaults to 230.
 @property (assign, nonatomic, readwrite) CGFloat shimmeringSpeed;
